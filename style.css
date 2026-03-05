@@ -67,6 +67,20 @@ transform: skew(-10deg);
 
 }
 
+.section-1-btn{
+font-size: 1.7rem;
+font-weight: 700;
+color: black;
+background-color: aliceblue;
+border: 3rem solid black;
+padding: .5rem 1rem;
+text-transform: uppercase;
+
+
+}
+
+
+
 
 
 
