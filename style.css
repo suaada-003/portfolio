@@ -1,0 +1,79 @@
+*{
+margin: 0;
+padding: 0;
+outline: none;
+box-sizing: border-box;
+text-decoration: none;
+list-style-type: none;
+font-family: Arial, sans-serif;
+font-weight: 300;
+
+}
+
+.section-1 {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.3)
+    ), url(images/bg.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-heading{
+font-size: 3rem;
+font-weight: 700;
+color: aliceblue;
+background-color: burlywood;
+padding: 0 3rem;
+margin-bottom: 5rem;
+text-transform: uppercase;
+letter-spacing: 1rem;
+border-bottom: 0.3rem solid white;
+transform: skew(-10dreg);
+
+
+
+
+}
+
+.person-image{
+width: 25rem;
+height: 25rem;
+border-radius: 50%;
+margin-left: 110px;
+object-fit: cover;
+border: 0.5rem dotted burlywood;
+padding: .5rem;
+opacity: 0.9;
+
+}
+
+.person-name{
+font-size: 2rem;
+color: aliceblue;
+background-color: burlywood;
+margin: 5rem 0;
+padding: .5rem 3rem;
+letter-spacing: .3rem;
+transform: skew(-10deg);
+
+}
+
+
+
+
+
+
+
+
+
+
+
