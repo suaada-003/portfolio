@@ -86,10 +86,26 @@ letter-spacing: .3rem;
 .navbar {
   width: 100%;
   height: 4rem;
-  background-color: #e41c6f;
+  background-color: burlywood;
   box-shadow: 0.2rem 0.2rem 0.5rem #555;
   position: absolute;
   z-index: 300;
+}
+
+.navbar-link {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 3rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.2s;
+  text-align: center;
+}
+
+.navbar-link:hover {
+  color: #fff;
 }
 
 
