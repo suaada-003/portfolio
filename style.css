@@ -1,106 +1,98 @@
-*{
-margin: 0;
-padding: 0;
-outline: none;
-box-sizing: border-box;
-text-decoration: none;
-list-style-type: none;
-font-family: Arial, sans-serif;
-font-weight: 300;
-
-}
-/*section-1*/
-
-.section-1 {
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.3)
-    ), url(images/bg.jpg);
-    
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-1-heading{
-font-size: 3rem;
-font-weight: 700;
-color: aliceblue;
-background-color: burlywood;
-padding: 0 3rem;
-margin-bottom: 5rem;
-text-transform: uppercase;
-letter-spacing: 1rem;
-border-bottom: 0.3rem solid white;
-transform: skew(-10dreg);
-
-
-
-
-}
-
-.person-image{
-width: 25rem;
-height: 25rem;
-border-radius: 50%;
-margin-left: 110px;
-object-fit: cover;
-border: 0.5rem dotted burlywood;
-padding: .5rem;
-opacity: 0.9;
-
-}
-
-.person-name{
-font-size: 2rem;
-color: aliceblue;
-background-color: burlywood;
-margin: 5rem 0;
-padding: .5rem 3rem;
-letter-spacing: .3rem;
-transform: skew(-10deg);
-
-}
-
-.section-1-btn{
-font-size: 1.7rem;
-font-weight: 700;
-color: black;
-background-color: aliceblue;
-border: .3rem solid black;
-padding: .5rem 1rem;
-text-transform: uppercase;
-letter-spacing: .3rem;
-
-}
-
-/*end of section 1*/
-
-/*navbar*/
-
-/* Make nav a flex container */
-nav {
-  display: flex;
-  justify-content: center; 
-  align-items: center;    
-  height: 80px;            
-  background-color: #fff;  
-}
-
-/* Remove default ul styling */
-.nav-list {
-  list-style: none;
-  display: flex;           
-  padding: 0;
+/* Reset and Common Styles */
+* {
   margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-heading {
+  font-size: 5rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 15rem;
+  border-bottom: 0.3rem solid #333;
+  text-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+/* End of Reset and Common Styles */
+
+/* Section 1 */
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(images/bg.jpg) center no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.section-1-heading {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: burlywood;
+  padding: 0 3rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  border-bottom: 0.3rem solid #fff;
+  text-shadow: 0.2rem 0.2rem 1rem #555;
+  transform: skew(-10deg);
+}
+
+.person-img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.7rem dotted burlywood;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem;
+  opacity: 0.9;
+}
+
+.person-name {
+  font-size: 2rem;
+  color: #fff;
+  background-color: burlywood;
+  margin: 5rem 0;
+  padding: 0.5rem 3rem;
+  letter-spacing: 0.3rem;
+  transform: skew(-10deg);
+}
+
+.section-1-btn {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #fff;
+  border: 0.3rem solid #333;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+/* End of Section 1 */
+
+/* Navbar */
 .navbar {
   width: 100%;
   height: 4rem;
@@ -110,16 +102,24 @@ nav {
   z-index: 300;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
 .navbar-link {
   font-size: 1.7rem;
   font-weight: 600;
   color: #333;
-  margin: 0 2rem;
-  letter-spacing: 0.2rem;
+  margin: 0 3rem;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
   position: relative;
   transition: color 0.2s;
-  
+}
+
+.change.navbar-link {
+  color: #fff;
 }
 
 .navbar-link:hover {
@@ -136,34 +136,93 @@ nav {
   bottom: -0.3rem;
   transition: width 0.2s;
 }
-.navbar-link:hover::before {
+
+.change.navbar-link::before {
   width: 130%;
 }
 
-/*end navbar*/
+.navbar-link:hover::before {
+  width: 130%;
+}
+/* End of Navbar */
 
+/* Section 2 */
+.section-2 {
+  width: 100%;
+  height: 100%;
+  padding: 15rem 0 10rem 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/*section2*/
+.progress-bars-wrapper {
+  margin-bottom: 10rem;
+}
 
+.progress-bar {
+  width: 60rem;
+  height: 3rem;
+  background-color: #ccc;
+  margin: 1.5rem 0;
+  border-radius: 0.3rem;
+  box-shadow: 0.2rem 0.2rem 1rem #555;
+  position: relative;
+}
 
+.progress-text {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
 
+.progress-text span {
+  margin: 0 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
 
-/*end of section2*/
+.progress-percent {
+  width: 0;
+  height: 100%;
+  background-color: #e41c6f;
+  border-radius: 0.3rem;
+  transition: width 0.5s 0.5s ease-in-out;
+}
 
+.services {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.service {
+  text-align: center;
+}
 
+.service:first-child,
+.service:last-child {
+  align-self: flex-start;
+}
 
+.service i {
+  font-size: 10rem;
+  color: #888;
+  margin-bottom: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem #555;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.service h2 {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #777;
+  width: 25rem;
+  letter-spacing: 0.3rem;
+  transform: skew(-10deg);
+  box-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+/* End of Section 2 */
