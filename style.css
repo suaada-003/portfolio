@@ -83,6 +83,23 @@ letter-spacing: .3rem;
 
 /*navbar*/
 
+/* Make nav a flex container */
+nav {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 80px;            
+  background-color: #fff;  
+}
+
+/* Remove default ul styling */
+.nav-list {
+  list-style: none;
+  display: flex;           
+  padding: 0;
+  margin: 0;
+}
+
 .navbar {
   width: 100%;
   height: 4rem;
@@ -96,21 +113,45 @@ letter-spacing: .3rem;
   font-size: 1.7rem;
   font-weight: 600;
   color: #333;
-  margin: 0 3rem;
-  letter-spacing: 0.3rem;
+  margin: 0 2rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   position: relative;
   transition: color 0.2s;
-  text-align: center;
+  
 }
 
 .navbar-link:hover {
   color: #fff;
 }
 
-
+.navbar-link::before {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background-color: #fff;
+  position: absolute;
+  right: -15%;
+  bottom: -0.3rem;
+  transition: width 0.2s;
+}
+.navbar-link:hover::before {
+  width: 130%;
+}
 
 /*end navbar*/
+
+
+/*section2*/
+
+
+
+
+/*end of section2*/
+
+
+
+
 
 
 
