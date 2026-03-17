@@ -273,6 +273,7 @@ html {
 .project-card h3 {
   margin-bottom: 10px;
   font-size: 3.4rem;
+  text-decoration: underline;
 }
 
 .project-card p {
