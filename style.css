@@ -84,7 +84,7 @@ html {
 .section-1 {
   width: 100%;
   min-height: 100dvh;
-  padding: 20px;
+  padding: 2rem 1rem;
 
   box-sizing: border-box;
   display: flex;
