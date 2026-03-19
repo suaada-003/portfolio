@@ -9,7 +9,26 @@
   font-family: "Jost", sans-serif;
   font-weight: 400;
 }
+/*service icons*/
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
 
+  .service i {
+    font-size: 5rem;
+  }
+
+  .service h2 {
+    width: auto;
+    font-size: 1.5rem;
+  }
+}
+
+
+/*navbar*/
 @media (max-width: 768px) {
   .section-1-heading {
     font-size: 3rem;
@@ -482,5 +501,7 @@ footer {
   margin-top: 12px;
   opacity: 0.7;
 }
+
+
 
 /*end of footer*/
