@@ -10,6 +10,29 @@
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  .section-1-heading {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+  }
+
+  .person-img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .person-name {
+    font-size: 1.6rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 html, body {
   overflow-x: hidden;
 }
@@ -148,6 +171,19 @@ html {
 .navbar-link:hover::before {
   width: 130%;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar-link {
+    margin: 10px;
+    font-size: 1.4rem;
+  }
+}
 /* End of Navbar */
 
 /* Section 2 */
@@ -166,8 +202,7 @@ html {
 }
 
 .progress-bar {
-  width: 90%;
-  max-width: 600px;
+  width: 60rem;
   height: 3rem;
   background-color: #ccc;
   margin: 1.5rem 0;
