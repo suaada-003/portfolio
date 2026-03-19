@@ -10,6 +10,10 @@
   font-weight: 400;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -162,7 +166,8 @@ html {
 }
 
 .progress-bar {
-  width: 60rem;
+  width: 90%;
+  max-width: 600px;
   height: 3rem;
   background-color: #ccc;
   margin: 1.5rem 0;
