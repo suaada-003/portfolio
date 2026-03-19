@@ -9,6 +9,8 @@
   font-family: "Jost", sans-serif;
   font-weight: 400;
 }
+
+
 /*service icons*/
 @media (max-width: 768px) {
   .services {
@@ -92,17 +94,18 @@ html {
 }
 
 .section-1-heading {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
   color: #fff;
   background-color: burlywood;
   padding: 0 3rem;
   margin-bottom: 5rem;
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
   border-bottom: 0.3rem solid #fff;
   text-shadow: 0.2rem 0.2rem 1rem #555;
   transform: skew(-10deg);
+  text-align: center;
 }
 
 .person-img {
