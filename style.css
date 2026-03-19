@@ -232,14 +232,14 @@ html {
 
 /*section 3*/
 
-#projects {
+.projects {
   padding: 60px 20px;
-  
+  font-size: 3.5;
   background-color: rgba(128, 128, 128, 0.123);
   text-align: center;
 }
 
-#projects h2 {
+.projects h2 {
   font-size: 4.2rem;
   margin-bottom: 40px;
 }
@@ -316,20 +316,20 @@ html {
 
 /*end of section 3*/
 
-
-#contact {
+/*section-4*/
+.contact {
   padding: 60px 20px;
   background-color: white;
   text-align: center;
 }
 
-#contact h2 {
+.contact h2 {
   font-size: 3.6rem;
   margin-bottom: 10px;
   color: grey;
 }
 
-#contact p {
+.contact p {
   margin-bottom: 30px;
   font-size: 2.4rem;
   color: grey;
@@ -403,43 +403,44 @@ html {
   }
 }
 
+/*end of section-4  */
 
+
+/*footer*/
 footer {
-  background-color: #111;
-  color: white;
+  background-color: rgba(128, 128, 128, 0.192);
+  color: black;
   text-align: center;
   padding: 30px 20px;
 }
 
 .footer-name {
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 300;
   margin-bottom: 10px;
+  color: black;
 }
 
 .footer-links a,
 .footer-social a {
-  color: white;
+  color: burlywood;
   margin: 0 10px;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1.5rem;
 }
 
 .footer-links {
   margin: 10px 0;
 }
 
-.footer-social {
-  margin: 10px 0;
-}
-
-.footer-links a:hover,
-.footer-social a:hover {
-  color: #4CAF50;
+.footer-links a:hover {
+  color: grey
 }
 
 .footer-copy {
-  font-size: 0.8rem;
-  margin-top: 15px;
+  font-size: 1.3rem;
+  margin-top: 12px;
   opacity: 0.7;
 }
+
+/*end of footer*/
