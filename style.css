@@ -83,9 +83,13 @@ html {
 /* Section 1 */
 .section-1 {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 20px;
-  text-align: center;
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  
 
   background: linear-gradient(
       rgba(255, 255, 255, 0.2),
@@ -94,6 +98,7 @@ html {
     url(images/bg.jpg) center no-repeat;
   background-size: cover;
   flex-direction: column;
+  justify-content: center;
 }
 
 .section-1-heading {
